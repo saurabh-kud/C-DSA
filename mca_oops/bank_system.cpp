@@ -15,11 +15,11 @@ class account {
         cout<<"enter withdrawal amount ";
         cin>>withdrawal_amount;
         
-        if(bank_bal>1000&& (bank_bal-withdrawal_amount)>1000){
+        if(bank_bal>1000&& (bank_bal-withdrawal_amount)>=1000){
             bank_bal-=withdrawal_amount;
-            cout<<"withdrawal completed of "<<withdrawal_amount<<endl;
+            cout<<"withdrawal completed of "<<withdrawal_amount<<endl<<endl;
         }else{
-            cout<<"your bank balance is less than 1000 can't withdrawal"<<endl;
+            cout<<"your bank balance is less than 1000 can't withdrawal"<<endl<<endl;
         }
     }
 
@@ -30,11 +30,11 @@ class account {
 
         bank_bal+=deposite_amount;
 
-        cout<<"deposite completed of "<<deposite_amount<<endl;
+        cout<<endl<<"deposite completed of "<<deposite_amount<<endl<<endl;
     }
 
     void chek_bal(){
-        cout<<"your bank balance is "<<bank_bal<<endl;
+        cout<<"your bank balance is "<<bank_bal<<endl<<endl;
     }
 
 };
@@ -59,13 +59,13 @@ int main(){
           break;
         case 2: 
            a1.chek_bal();
-           break;
+           break;   
         case 3: 
          a1.withdrawal();
            break;
         default:
          cout<<"you enter wrong option";
-         break;
+         
     }
   }while(option);
 
