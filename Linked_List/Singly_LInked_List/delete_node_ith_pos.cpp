@@ -53,6 +53,7 @@ node* delete_node(node* head,int index){
     if(temp!=NULL){
         node* it= temp->next;
         temp->next=it->next;
+        delete it;
     }
    return head;
 }

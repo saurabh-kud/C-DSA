@@ -1,0 +1,2 @@
+
+    cout<<j->data<<end

@@ -15,7 +15,7 @@ class account {
         cout<<"enter withdrawal amount ";
         cin>>withdrawal_amount;
         
-        if(bank_bal>1000){
+        if(bank_bal>1000&& (bank_bal-withdrawal_amount)>1000){
             bank_bal-=withdrawal_amount;
             cout<<"withdrawal completed of "<<withdrawal_amount<<endl;
         }else{

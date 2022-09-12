@@ -6,8 +6,7 @@ using namespace std;
      int size2{ei-mid};
      int * subarray1=new int [size1];
      int * subarray2=new int [size2];
-      cout<<"from merging "<<size1<<endl;
-      cout<<"from merging 2"<<size2<<endl;
+     
      for(int i{};i<size1;i++){
          subarray1[i]=arr[si+i];
      }
@@ -34,7 +33,8 @@ using namespace std;
     while(j<size2){
         arr[k++]=subarray2[j++];
     }
-      
+      delete [] subarray1;
+      delete [] subarray2;
 }
 
  
