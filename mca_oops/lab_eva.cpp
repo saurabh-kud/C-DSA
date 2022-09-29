@@ -18,7 +18,14 @@ class retailer {
         }
      }
    
-   void cal_percentage(){
+   void cal_percentage();
+
+
+};
+
+
+
+ void retailer:: cal_percentage(){
 
       cout<<endl<<endl<<"-----------------------------------------"<<endl;
 
@@ -31,9 +38,6 @@ class retailer {
 
       cout<<"total percentage is "<<(total_percentage*100.0)/total_purchase<<"%"<<endl;
    }
-
-
-};
 
  
 int main(){
