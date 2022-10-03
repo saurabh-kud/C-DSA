@@ -1,3 +1,6 @@
+// calculate total sale revenue of a company for both the year 
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
