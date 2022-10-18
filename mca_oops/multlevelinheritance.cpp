@@ -18,8 +18,12 @@ class employee{
       name=nm;
       salary=sal;
      }
+};
 
-       void getSalary(){
+
+class manager: public employee{
+  public:
+    void getSalary(){
        int netsal=salary;
        
        netsal+=(salary*20)/100;
@@ -29,23 +33,14 @@ class employee{
        netsal-=(salary*40)/100;
 
        netSalary=netsal;
-
-         cout<<"your gross salery is "<<netSalary<<endl;
-        
-        
      }
 
 };
 
 
-class manager: public employee{
-
-};
- class assManager:public employee{
-
- };
 int main(){
      assManager m1;
      m1.getSalary();
+     m1.sal_show();
  return 0;
 }

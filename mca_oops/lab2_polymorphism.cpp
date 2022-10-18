@@ -4,37 +4,37 @@ using namespace std;
 class shape{
     int height=0;
     int width=0;
+    int area=0;
     public:
-    shape(){
-
-    }
+   
     
-    shape(int he,int wid){
+    shape(){
+        int he,wid;
+        cout<<"enter shape height ";
+        cin>>he;
+        cout<<"enter shape width ";
+        cin>>wid;
         height=he;
         width=wid;
 
     }
+    void area_cal(){
+        area=height*width;
+    }
 
-     shape operator+(shape const & ob1){
+     shape operator*(shape  & ob1){
         shape res;
-        res.height=height+ob1.height;
-        res.width=width+ob1.width;
+        res.area=area*ob1.area;
         return res;
-
-        
-     }
-     int calculate_area(){
-        return height*width;
-     }
+    }
+    
 
 };
 int main(){
  
-   shape obj1(10,12),obj2(20,23);
+   shape obj1 ,obj2;
   
-   shape obj3=obj1+obj2;
-   cout<<"area is "<<obj3.calculate_area()<<endl;
-
-
+ //    shape obj3=obj1+obj2;
+//    cout<<"area is "<<obj3.area<<endl;
  return 0;
 }
