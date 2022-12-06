@@ -46,3 +46,4 @@ int main(){
   s1.getSalary();
  return 0;
 }
+

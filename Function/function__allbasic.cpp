@@ -110,15 +110,21 @@ void add_number(vector<int>&vec){
         vec.push_back(num);
         cout<<num<<" "<<"added"<<endl;
     }else{
+        bool isAvi=false;
         for(auto x:vec){
             if(x==num){
+                isAvi=true;
+                break;
+            }
+        }
+        if(isAvi){
                 cout<<"value already avilable in list"<<endl;
-            }else{
+               
+        }else{
                 vec.push_back(num);
                 cout<<num<<" "<<"added"<<endl;
-                break;
+               
 
-            }
         }
     }
 }

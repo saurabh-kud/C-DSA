@@ -1,2 +1,1 @@
- cout<<num<<endl;
-    cout<<ror<<endl;
+obile with powerba

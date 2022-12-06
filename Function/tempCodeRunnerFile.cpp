@@ -1,0 +1,10 @@
+void display_menu();
+// char input_menu();
+// void print_number(vector<int>&vec);
+// void add_number(vector<int>&vec);
+// void mean_ofNumber(vector<int>&vec);
+// void small_num(vector<int>&vec);
+// void large_num(vector<int>&vec);
+// void clear_list(vector<int>&vec);
+// void find_num(vector<int>&vec);
+// void switching(char,vector<int>&vec);
