@@ -9,10 +9,11 @@ class student
     student(int x)
     {
         n=x;
-       a=  new int (n);
+       a=  new int [x];
+       cout<<"input stude"<<x<<endl;
         cout<<"enter student marks:";
-        for(int i=0;i<n;i++)
-        {
+        for(int i=0;i<x;i++)
+        {   cout<<"enter "<<i<<" input : ";
             cin>>a[i];
         }
     }
@@ -22,7 +23,9 @@ class student
     }
     void three()
     {
-        sort(a,a+size());
+        
+        sort(a,a+n);
+      
         cout<<a[n-1];
     }
 
