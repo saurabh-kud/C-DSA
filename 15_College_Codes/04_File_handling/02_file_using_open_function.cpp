@@ -11,7 +11,7 @@ cout<<"enter name and rollNo"<<endl;
 cin>>name>>rollNo;
 
 ofstream fout;
-fout.open("saroj2.doc");
+fout.open("saurabh.txt");
 
 fout<<name<<"\n";
 fout<<rollNo<<"\n";
@@ -19,7 +19,7 @@ fout<<rollNo<<"\n";
 fout.close();
 
 ifstream fin;
-fin.open("saroj2.doc");
+fin.open("saurabh.txt");
 
 string name2;
 int rollNo2;

@@ -2,7 +2,7 @@
 using namespace std;
 
 class one{
-    string s="saroj kumar";
+    string s="saurabh kumar";
     
     public:
 

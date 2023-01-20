@@ -12,8 +12,7 @@ int main(){
 
     ofstream fout;
     fout.open("xyz.txt");
-    fout<<"my name is saroj"<<"\n";
-    fout<<"my friend is neha and riya";
+    fout<<"my name is saurabh"<<"\n";
     fout.close();
 
     ifstream fin;

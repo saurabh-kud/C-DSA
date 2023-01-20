@@ -25,7 +25,7 @@ class rectangle{
         length--;
         width--;
     }
-
+      
 };
 
                     
@@ -35,6 +35,7 @@ int main(){
     r.area();
 
     r++;
+    
     r.area();
 
     r--;

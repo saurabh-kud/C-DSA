@@ -27,9 +27,7 @@ file2>>roll2;
 
 cout<<str<<endl;
 cout<<roll2<<endl;
-cout<<"saroj kumar "<<endl;
-cout<<"manoj kumar "<<endl;
-  
+
 file2.close();
 
 return 0;

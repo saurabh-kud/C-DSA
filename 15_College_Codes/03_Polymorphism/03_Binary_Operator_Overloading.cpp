@@ -16,17 +16,22 @@ class Distance{
         feet=x;
         inch=y;
     }
+    //copy consturctor
+    Distance ( Distance &ibrar){
+        feet=ibrar.feet;
+        inch=ibrar.inch;
+    }
 
-    Distance operator + (Distance& d2){
+    Distance operator + (Distance& ibrar){
         Distance d3;
-        d3.feet=feet+d2.feet;
-        d3.inch=inch+d2.inch;
+        d3.feet=feet+ibrar.feet;
+        d3.inch=inch+ibrar.inch;
         return d3;
     }
 
     void show(){
-        cout<<feet<<endl;
-        cout<<inch<<endl;
+        cout<<"feet is "<<feet<<endl;
+        cout<<"inch is "<<inch<<endl;
     }
 
 };
@@ -36,10 +41,11 @@ int main(){
     Distance d1(10,20);
 
     Distance d2(20,30);
-
+ 
+  
     Distance d3;
 
-    d3=d1+d2;
+    d3=d1+d3; d1+(d3)
 
     d3.show();
   

@@ -17,13 +17,13 @@ int rollNo;
 cout<<"enter name and rollNo"<<endl;
 cin>>name>>rollNo;
 
-ofstream fout("saroj.doc");
+ofstream fout("saurabh.txt");
 fout<<name<<"\n";
 fout<<rollNo<<"\n";
 
 fout.close();
 
-ifstream fin("saroj.doc");
+ifstream fin("saurabh.txt");
 
 string name2;
 int rollNo2;
