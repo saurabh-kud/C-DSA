@@ -4,14 +4,14 @@ using namespace std;
 
 template< typename T>
 
-class stacktemp {
+class stack{
     T* data;
     int top;
     int capacity;
 
     public:
        //constructor
-    stacktemp(){
+    stack(){
         capacity=1;
         data= new T [capacity];
         top=0;
@@ -61,16 +61,16 @@ class stacktemp {
 
 
 
-int main(){
+// int main(){
 
-    stacktemp<char> s1;
-    s1.push(65);
-    cout<<s1.Peek();
-    cout<<s1.pop()<<endl;
-    cout<<s1.Peek()<<endl;
-    cout<<s1.pop()<<endl;
-    s1.push('d');
-    s1.push('k');
-    cout<<s1.Peek()<<endl;
-    cout<<s1.isEmpty()<<endl;
-}
+//     stacktemp<char> s1;
+//     s1.push(65);
+//     cout<<s1.Peek();
+//     cout<<s1.pop()<<endl;
+//     cout<<s1.Peek()<<endl;
+//     cout<<s1.pop()<<endl;
+//     s1.push('d');
+//     s1.push('k');
+//     cout<<s1.Peek()<<endl;
+//     cout<<s1.isEmpty()<<endl;
+// }
