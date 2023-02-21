@@ -12,6 +12,7 @@ class node{
       }
 };
 
+//take input 
 node* takeInput(){
     int data;
     cout<<"enter value ";
@@ -37,6 +38,7 @@ node* takeInput(){
     return head;
 }
 
+//search elements 
 void search(node* head,int val){
     node *temp = head;
     int count = 1;
@@ -55,7 +57,7 @@ void search(node* head,int val){
     }
 }
 
-
+//print linked list
 void print_li(node* head){
   if(!head){
        cout << "list is empty" << endl;
@@ -71,6 +73,7 @@ void print_li(node* head){
     
 }
 
+//insert at specific position
 node* insert_at_specific(node* head,int pos,int val){
   node *newNode = new node(val);
   int tempPos = 1;
@@ -107,12 +110,75 @@ node* insert_at_specific(node* head,int pos,int val){
   }
 }
 
+//print into rev order 
+ void printrev(node* head){
+  node *temp = head;
+    if(head==NULL){
+           
+           return;
+    }
+
+    printrev(head->next);
+    cout << head->data << " ";
+ }
+
+// delete a node from last 
+
+void delAtLast(node* head){
+  if(head==NULL){
+           cout << "linked list is empty" << endl;
+           return;
+  }
+  if(head->next){
+           delete head;
+           head = NULL;
+  }
+    node *temp = head;
+    
+    while(temp->next->next){
+           
+           temp = temp->next;
+    }
+    
+    delete temp->next;
+    temp->next = NULL;
+}
+
+void delAtSpecific(node* head,int pos){
+      if(!head){
+           cout << "linked list is empty" << endl;
+           return;
+      }
+      if(!head->next){
+           delete head;
+           return;
+      }
+      node *temp = head;
+      int tempPos = 1;
+      while(temp){
+        if(tempPos<pos-1){
+             tempPos++;
+             temp = temp->next;
+        }else{
+             break;
+        }
+      }
+      node *tempNode = temp->next;
+      temp->next = tempNode->next;
+      delete tempNode;
+}
+
 int main(){
  
  node* head=takeInput();
  print_li(head);
- head = insert_at_specific(head, 4, 10);
+//  head = insert_at_specific(head, 4, 10);
  search(head, 5);
+//  delAtLast(head);
  print_li(head);
+ printrev(head);
+ delAtSpecific(head, 3);
+ print_li(head);
+
  return 0;
 }
