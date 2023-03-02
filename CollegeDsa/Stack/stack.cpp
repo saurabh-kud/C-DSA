@@ -3,7 +3,8 @@ using namespace std;
 
 
 
-template<class T> class stacktemp{
+template<class T> 
+class stacktemp{
     T* data;
     int capacity;
     int top;
@@ -68,15 +69,15 @@ template<class T> class stacktemp{
 int main(){
  stacktemp <int> s;
  cout<< s.isEmpty()<<endl;
- s.push(10);
- s.push(15);
- s.push(10);
- s.push(15);
+ s.push(20);
+ s.push(30);
+ s.push(40);
+ s.push(50);
  s.push(10);
  s.push(15);
  s.display();
  cout<<s.peek()<<endl;
- s.pop();
+ cout<<s.pop()<<endl;
  cout<<s.peek()<<endl;
 
  s.pop();

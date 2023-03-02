@@ -1,4 +1,6 @@
 
+*.class
+*.exe
 
 */zMiss/*
 */Testing_ignore/*

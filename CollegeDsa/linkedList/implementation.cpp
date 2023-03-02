@@ -173,12 +173,12 @@ int main(){
  node* head=takeInput();
  print_li(head);
 //  head = insert_at_specific(head, 4, 10);
- search(head, 5);
-//  delAtLast(head);
- print_li(head);
- printrev(head);
- delAtSpecific(head, 3);
- print_li(head);
+//  search(head, 5);
+// //  delAtLast(head);
+//  print_li(head);
+//  printrev(head);
+//  delAtSpecific(head, 3);
+//  print_li(head);
 
  return 0;
 }

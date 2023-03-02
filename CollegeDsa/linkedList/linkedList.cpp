@@ -26,7 +26,7 @@ private:
             return;
         }
         revprint_helper(current->next);
-        std::cout << current->data << " ";
+        cout << current->data << " ";
     }
 
 public:
@@ -203,6 +203,11 @@ void linkedList::search(int val){
 linkedList::~linkedList()
 {
     // cout << "deconstructor  called" << endl;
+    while(head->next){
+        node *temp = head;
+        delete temp;
+        head->next;
+    }
 }
 
 
