@@ -25,6 +25,10 @@ class circularqueur{
          return (front + 1) % size == rear;
      }
 
+     void enqueue(int value){
+        
+     }
+
 }
 
  

@@ -30,7 +30,7 @@ class doublyList{
       void insertAtSpecific(int, int);
       void deleteLast();
       void deleteFirst();
-      voi deleteAtSpecific(int)
+      void deleteAtSpecific(int)
 };
 
 void doublyList::takeInput(){

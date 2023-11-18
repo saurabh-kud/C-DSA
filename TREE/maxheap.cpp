@@ -33,7 +33,7 @@ void binaryTree::insert(int val){
      node *temp = root;
 
      while(temp->left!=NULL){
-        temp
+        
      }
 
      if(temp->left==NULL){

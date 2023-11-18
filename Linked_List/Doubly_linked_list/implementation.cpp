@@ -19,6 +19,7 @@ class Doubly_linked_list{
          //constructor
         Doubly_linked_list(){
             int data{};
+            cout << "enter bogie: ";
             cin>>data;
                 node* temp=NULL;
 
@@ -32,14 +33,29 @@ class Doubly_linked_list{
                         newNode->prev=temp;
                         temp=temp->next;
                 }
+                 cout << "enter bogie: ";
                 cin>>data;
             }
           
         }
          //FUNCTION
         void display();
-
+        void insertLast(int);
 };
+
+ void Doubly_linked_list::insertLast(int data){
+                node *newNode = new node(data);
+            if(head==NULL){
+                head = newNode;
+            }else{
+                node *temp = head;
+                while(temp->next!=NULL){
+                        temp = temp->next;
+                }
+                newNode->prev = temp;
+                temp->next = newNode;
+            }
+        }
 
 void Doubly_linked_list:: display(){
     node* temp= head;
@@ -53,5 +69,13 @@ void Doubly_linked_list:: display(){
 int main(){
    Doubly_linked_list d1;
     d1.display();
- return 0;
+    int data;
+    cout << "enter data to insert in bogie: ";
+    cin >> data;
+    d1.insertLast(data);
+    cout << "enter data to insert in bogie: ";
+    cin >> data;
+    d1.insertLast(data);
+    d1.display();
+    return 0;
 }
